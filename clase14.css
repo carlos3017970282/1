@@ -1,0 +1,11 @@
+@import url("custom-responsive.css");
+@import url("custom.css");
+
+h1{
+    color: aqua;
+}
+
+.banner{
+    background-image: url(logo-azul\ \(2\).png);
+    
+}

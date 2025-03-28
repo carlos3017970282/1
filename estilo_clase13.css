@@ -1,0 +1,296 @@
+body {
+    font-family: sans-serif;
+    margin: 0;
+    text-transform: capitalize;
+    /* para que aparezca en mayuscula la priumera palabra de cada cosa */
+}
+
+header {
+    display: flex;
+    height: 70px;
+    background-color: yellow;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+.a {
+    text-decoration: none;
+    color: black;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    height: 70px;
+    margin-right: 10px;
+}
+
+.noticia {
+    text-align: center;
+    margin-right: 0px;
+}
+
+.espacio{
+    background-color: #ffffff;
+    padding: 20px 0;
+}
+
+.noticia img {
+    width: 1024px;
+    height: 302px;
+}
+
+nav a {
+    font-weight: 600;
+    padding-right: 10px;
+}
+
+nav a:hover {
+    color: fuchsia;
+}
+
+@media (max-width:700px) {
+    /* para reducir la pagina y no quede todo corrido */
+
+    header {
+        flex-direction: column;
+    }
+
+    nav {
+        padding: 10px 0px;
+    }
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer {
+    background-color: yellow;
+    padding: 80px 0;
+}
+
+.footer-row {
+    display: flex;
+    /* acomodar todo de lado, todo lo que va en fila lo pone delado por las divisiones de los contenedores */
+    flex-wrap: wrap;
+    /* para que se pongan en columna */
+}
+
+.footer-links {
+    width: 25%;
+    /* para separar las secciones, es decir, los contenedores, ya que los puse al lado y aqui digo la distancia entre ellos */
+    padding: 0 15px;
+
+
+}
+
+.footer-links h4 {
+    font-size: 20px;
+    /* tamaño de texto */
+    color: purple;
+    margin-bottom: 25px;
+    font-weight: 500;
+    /* grosor de la letra */
+    border-bottom: 2px solid blue;
+    padding-bottom: 0px;
+    display: inline-block;
+}
+
+.footer-links ul li a {
+    font-size: 18px;
+    text-decoration: none;
+    color: brown;
+    margin-bottom: 15px;
+    transition: all .1s ease;
+}
+
+.footer-links ul li a:hover {
+    color: white;
+    padding-left: 6px;
+}
+
+.btn-verde {
+    color: red;
+    border: 1px solid rgb(0, 0, 0);
+    border-radius: 12px;
+    align-items: center;
+    /* margin-left: 529px; */
+    padding: 10px 65px;
+    text-decoration: none;
+    font-size: 15px;
+}
+
+.btn-verde:hover {
+    background-color: red;
+    color: white;
+}
+
+.lluvia {
+    text-align: center;
+    background-color: black;
+    color: white;
+    padding: 20px;
+}
+
+.title {
+    margin-bottom: 30px;
+    font-size: 60px;
+    font-weight: 600;
+    text-transform: uppercase;
+
+}
+
+.p {
+    margin-bottom: 40px;
+    font-size: 18px;
+}
+
+.content {
+    margin: 30px;
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+.box-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    /* text-align: center; */
+    gap: 15px;
+}
+
+/* .box-container .box { */
+.box {
+
+    height: 150px;
+    width: 320px;
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    text-align: center;
+    /* border-radius: 1rem; rem es algo relativo */
+    border-radius: 1px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+    /* box-shadow: 0 .3rem 5rem rgba(0, 0, 0, .5); esto es para dar sombre*/
+    margin: 2rem;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+}
+
+/* .box-container .box i {
+    height: 3rem;
+    width: 3rem;
+    line-height: 3rem;
+    text-align: center;
+    border-radius: 50%;
+    color: aqua;
+    background: purple;
+    font-size: 2rem;
+    margin: 1rem 0;
+} */
+
+
+.wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 150px auto;
+    width: 70%;
+}
+
+.princi {
+    width: 400px;
+    height: 167px;
+    border: 3px solid black;
+    border-radius: 10px;
+    margin-right: 15px;
+}
+
+.txr {
+    margin-right: 50px;
+    font-size: 16px;
+}
+
+.txr h3 {
+    font-size: 42px;
+    /* tamaño de texto */
+
+}
+
+.nuestros-clientes {
+    background-color: #f9f9f9;
+    padding: 40px 0;
+    text-align: center;
+}
+
+.sobre-nosotros {
+    background-color: yellow;
+    padding: 10px 0;
+    /* text-align: center; */
+}
+
+.señal {
+    background-color: yellow;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.nuestros-clientes h2 {
+    margin-bottom: 20px;
+    font-size: 28px;
+    color: #333;
+}
+
+.clientes-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.cliente {
+    width: 200px;
+    height: 150px;
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 12px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.cliente h3 {
+    margin-bottom: 10px;
+    font-size: 18px;
+    color: #555;
+}
+
+.cliente p {
+    font-size: 14px;
+    color: #777;
+}
+
+.cliente:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
